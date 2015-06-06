@@ -8,11 +8,17 @@
 <body>
 	<div id="stage">
 		<div class="card-container">
-			<div class="card-back">?</div>
-			<div class="card-front">5</div>
+			<div class="card">
+				<div class="card-back">?</div>
+				<div class="card-front">5</div>
+			</div>
 		</div>
 	</div>
 	<script>
+		var card = document.getElementsByClassName('card')[0];
+		card.addEventListener('click', function() {
+			card.className = 'card open';
+		})
 	</script>
 </body>
 </html>
